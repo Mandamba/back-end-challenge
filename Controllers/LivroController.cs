@@ -57,8 +57,8 @@ namespace BookStoreCrudWebApi.Controllers
               : BadRequest("Erro ao Cadastrar o Livro");
         }
         
-        [HttpPost("/livro-autore-enexistent")]
-        public async Task<IActionResult> CadastrarLivroAutoreNExistent([FromBody] LivroAutorCadastrar obj){
+        [HttpPost("/Cadastrar-livro-autores-generos")]
+        public async Task<IActionResult> CadastrarLivroAutoresGeneros([FromBody] LivroAutorCadastrar obj){
 
             if( obj == null)return BadRequest("Dados Inválidos");
            
